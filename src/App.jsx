@@ -10,11 +10,11 @@ import PMOSync from './modules/PMOSync'
 import BudgetHub from './modules/BudgetHub'
 
 const navItems = [
-  { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
-  { id: 'ai-proposal', label: 'AI Proposal Gen', icon: Sparkles },
-  { id: 'jira', label: 'Jira Assistant', icon: CheckSquare },
-  { id: 'pmo', label: 'PMO Automator', icon: FolderKanban },
-  { id: 'budget', label: 'Budget Hub', icon: Wallet },
+  { id: 'dashboard', label: 'Общий вид', icon: LayoutDashboard },
+  { id: 'ai-proposal', label: 'Генератор ИП', icon: Sparkles },
+  { id: 'jira', label: 'Jira Контроль', icon: CheckSquare },
+  { id: 'pmo', label: 'PMO Синхронизация', icon: FolderKanban },
+  { id: 'budget', label: 'Бюджет', icon: Wallet },
 ]
 
 const mockMetrics = {
@@ -36,7 +36,7 @@ export default function App() {
         className="bg-[#1E3A8A] text-white flex flex-col"
       >
         <div className="p-4 border-b border-blue-800 flex items-center justify-between">
-          {sidebarOpen && <span className="font-bold text-lg">CAM Dashboard</span>}
+          {sidebarOpen && <span className="font-bold text-lg">КАМ Дашборд</span>}
           <button onClick={() => setSidebarOpen(!sidebarOpen)} className="p-1 hover:bg-blue-800 rounded">
             {sidebarOpen ? <X size={20}/> : <Menu size={20}/>}
           </button>
